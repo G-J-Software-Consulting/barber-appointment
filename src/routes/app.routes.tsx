@@ -8,7 +8,7 @@ import { SuccessAppointment } from "../screens/SuccessAppointment";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/login" element={<SignIn />} />
+      <Route path="/" element={<SignIn />} />
       <Route path="/register" element={<SignOut />} />
       <Route
         path="/serviceAndAppointment"
