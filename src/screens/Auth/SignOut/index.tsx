@@ -13,7 +13,7 @@ export function SignOut() {
 
   function handlerUserToRegister(event: React.MouseEvent<HTMLElement>) {
     event.preventDefault();
-    navigate("/login");
+    navigate("/");
   }
   return (
     <ContainerSignIn>
