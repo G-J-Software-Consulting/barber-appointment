@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
   SuccessAppointmentContainer,
   ContainerSuccess,
@@ -6,6 +8,11 @@ import {
 } from "./styles";
 import { Check, Checks } from "phosphor-react";
 export function SuccessAppointment() {
+  const navigate = useNavigate();
+
+  function handlerNavigateUserToScreenService() {
+    navigate("/serviceAndAppointment");
+  }
   return (
     <SuccessAppointmentContainer>
       <ContainerSuccess>
@@ -14,7 +21,7 @@ export function SuccessAppointment() {
       </ContainerSuccess>
       <ContainerDetailsAppointment>
         <span>Sexta, dia 14 de Outubro de 2022 às 12:00h com Davi/Kauan.</span>
-        <Button>
+        <Button onClick={handlerNavigateUserToScreenService}>
           <Checks size={24} />
           OK
         </Button>
