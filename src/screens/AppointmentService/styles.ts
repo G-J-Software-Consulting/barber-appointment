@@ -65,6 +65,11 @@ export const ContainerSelectHours = styled.div`
       padding: 1rem;
     }
   }
+
+  span {
+    font-size: 0.8rem;
+    font-family: ${(props) => props.theme.fonts.peralta};
+  }
 `;
 export const ButtonSignIn = styled.button`
   width: 100%;
